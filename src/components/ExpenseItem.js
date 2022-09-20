@@ -2,17 +2,21 @@ import React from 'react'
 
 import './ExpenseItem.css'
 
-function ExpenseItem() {
+function ExpenseItem(props) {
+  const expenseDate = props.date
+  const expenseTitle = props.title
+  const expenseAmount = props.amount
+
   return (
     <div className='expense-item'>
       <div>
-        March 21st 2022
+        { expenseDate.toISOString() }
       </div>
       <h2 className='expense-item__date'>
-        Car Insurance
+        { expenseTitle }
       </h2>
       <div className='expense-item__price'>
-        Rp. 2.000.000
+        { expenseAmount }
       </div>
     </div>
   )
