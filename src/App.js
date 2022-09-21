@@ -1,4 +1,4 @@
-import ExpenseItem from './components/ExpenseItem'
+import Expenses from "./components/Expenses";
 
 function App() {
   // here is how you add a paragraph into a div using vanilla JS
@@ -13,7 +13,11 @@ function App() {
       amount: 94.12,
       date: new Date(2020, 7, 14),
     },
-    { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
+    { id: 'e2',
+      title: 'New TV',
+      amount: 799.49,
+      date: new Date(2021, 2, 12) 
+    },
     {
       id: 'e3',
       title: 'Car Insurance',
@@ -30,18 +34,7 @@ function App() {
 
   return (
     <div>
-      {
-        expenses.map((expense) => {
-          return(
-            <ExpenseItem
-              key = {expense.id}
-              title = {expense.title}
-              amount = {expense.amount}
-              date = {expense.date}
-            />
-          )
-        })
-      }
+      <Expenses items = {expenses} />
     </div>
   );
 }
