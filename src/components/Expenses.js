@@ -6,7 +6,7 @@ import Card from './Card'
 import './Expenses.css'
 
 function Expenses(props) {
-    const expenses = props.items
+  const expenses = props.items
     
   return (
     <Card className='expenses'>
