@@ -1,5 +1,5 @@
 import React from "react";
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses.js";
 
 function App() {
   // here is how you add a paragraph into a div using vanilla JS
