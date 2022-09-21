@@ -1,7 +1,7 @@
 import React from "react";
 import Expenses from "./components/Expenses/Expenses.js";
 
-function App() {
+const App = () => {
   // here is how you add a paragraph into a div using vanilla JS
   // const para = document.createElement('p')
   // para.textContent = 'This is also visible!'

@@ -5,7 +5,7 @@ import Card from '../UI/Card'
 
 import './ExpenseItem.css'
 
-function ExpenseItem(props) {
+const ExpenseItem = (props) => {
   const expenseTitle = props.title
   const expenseAmount = props.amount
 
